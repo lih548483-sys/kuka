@@ -31,9 +31,9 @@ public class MinusFiftennDegreeVertical extends RoboticsAPIApplication {
 		getLogger().info("Move to the mechanical zero position");
 		PTP ptpToMechanicalZeroPosition = ptp(
 				Math.toRadians(0),   
-			    Math.toRadians(20), 
+			    Math.toRadians(0), 
 			    Math.toRadians(0),    
-			    Math.toRadians(-50),   
+			    Math.toRadians(-70),   
 			    Math.toRadians(0),    
 			    Math.toRadians(95),  
 			    Math.toRadians(0)
