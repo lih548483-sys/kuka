@@ -58,3 +58,33 @@ Command-line arguments:  -data C:\Github\kuka\lumba -os win32 -ws win32 -arch x8
 
 !ENTRY org.eclipse.osgi 2 1 2026-01-08 19:38:56.763
 !MESSAGE NLS unused message: MassPropertySection_validationError_outOfRange in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+!SESSION 2026-01-10 15:05:30.133 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_45
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -data C:\Github\kuka\lumba -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:32.330
+!MESSAGE NLS unused message: DeleteTemplateHandler_ConfirmationTitleRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:32.341
+!MESSAGE NLS unused message: DeleteHandler_DeleteFrameWithChildsDialogMessageRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:32.341
+!MESSAGE NLS unused message: Rapi2DeleteHandler_ConfirmCategoryDeletionTitle in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:32.341
+!MESSAGE NLS unused message: Rapi2DeleteHandler_ConfirmCategoryDeletionMessage in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:32.343
+!MESSAGE NLS unused message: Rapi2CreateFrameHandler_OnlyOneFrameAllowed in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:32.343
+!MESSAGE NLS unused message: ScenegraphView_SelectRapi1 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:32.343
+!MESSAGE NLS unused message: ScenegraphView_SelectRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:32.345
+!MESSAGE NLS unused message: MassPropertySection_validationError_outOfRange in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings

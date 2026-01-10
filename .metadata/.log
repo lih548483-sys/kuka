@@ -913,3 +913,385 @@ Command-line arguments:  -data C:\Github\kuka -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.osgi 2 1 2026-01-08 19:42:24.283
 !MESSAGE NLS unused message: WorkpieceSafetyPropertySection_inertiaInvalid in: com.kuka.safety.configuration.SafetyConfiguration
+!SESSION 2026-01-10 14:52:23.739 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_45
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:52:26.664
+!MESSAGE NLS unused message: DeleteTemplateHandler_ConfirmationTitleRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:52:26.676
+!MESSAGE NLS unused message: DeleteHandler_DeleteFrameWithChildsDialogMessageRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:52:26.676
+!MESSAGE NLS unused message: Rapi2DeleteHandler_ConfirmCategoryDeletionTitle in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:52:26.677
+!MESSAGE NLS unused message: Rapi2DeleteHandler_ConfirmCategoryDeletionMessage in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:52:26.677
+!MESSAGE NLS unused message: Rapi2CreateFrameHandler_OnlyOneFrameAllowed in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:52:26.677
+!MESSAGE NLS unused message: ScenegraphView_SelectRapi1 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:52:26.678
+!MESSAGE NLS unused message: ScenegraphView_SelectRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:52:26.679
+!MESSAGE NLS unused message: MassPropertySection_validationError_outOfRange in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:55:27.752
+!MESSAGE NLS unused message: DeployProjectHandler_UnknownException in: com.kuka.roboticsAPI.industrial.targetManagement.messages
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:55:28.148
+!MESSAGE NLS unused message: FrameSafetyPropertySection_outOfRange in: com.kuka.safety.configuration.SafetyConfiguration
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:55:28.148
+!MESSAGE NLS unused message: WorkpieceSafetyPropertySection_description in: com.kuka.safety.configuration.SafetyConfiguration
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:55:28.150
+!MESSAGE NLS unused message: FrameSafetyPropertySection_description in: com.kuka.safety.configuration.SafetyConfiguration
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:55:28.150
+!MESSAGE NLS unused message: WorkpieceSafetyPropertySection_inertiaInvalid in: com.kuka.safety.configuration.SafetyConfiguration
+
+!ENTRY com.kuka.common.eclipse 4 0 2026-01-10 14:55:46.557
+!MESSAGE The synchronized project caused an error in the controller, see details.
+!STACK 0
+com.kuka.deployment.service.LocalizableDeploymentServiceException: Could not unload active project: Found active application 'application.MoveZConstantSpeed@lumba'
+	at com.kuka.deployment.service.internal.DeploymentServiceImpl.doRequestDeployment(DeploymentServiceImpl.java:176)
+	at com.kuka.deployment.service.internal.DeploymentServiceImpl.requestDeployment(DeploymentServiceImpl.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.kuka.publishing.ncf.contracts.MethodContract.invoke(MethodContract.java:95)
+	at com.kuka.publishing.ncf.messages.MethodInvoker.run(MethodInvoker.java:36)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.kuka.common.eclipse 4 0 2026-01-10 14:56:05.186
+!MESSAGE The synchronized project caused an error in the controller, see details.
+!STACK 0
+java.lang.IllegalStateException: Error while querying listener 'com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$ProjectManagerListenerImpl@147bc1'.
+	at com.kuka.project.provider.internal.ProjectManager.checkUnloadActiveProject(ProjectManager.java:436)
+	at com.kuka.project.provider.internal.ProjectManager.unloadActiveProject(ProjectManager.java:375)
+	at com.kuka.project.provider.internal.ProjectManager.unloadActiveProject(ProjectManager.java:342)
+	at com.kuka.deployment.manager.internal.DeploymentManager.requestDeployment(DeploymentManager.java:193)
+	at com.kuka.deployment.service.internal.DeploymentServiceImpl.doRequestDeployment(DeploymentServiceImpl.java:164)
+	at com.kuka.deployment.service.internal.DeploymentServiceImpl.requestDeployment(DeploymentServiceImpl.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.kuka.publishing.ncf.contracts.MethodContract.invoke(MethodContract.java:95)
+	at com.kuka.publishing.ncf.messages.MethodInvoker.run(MethodInvoker.java:36)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to get tool templates from application data source
+	at com.kuka.roboticsAPI.applicationServer.services.common.DataSourceUtil.getToolTemplates(DataSourceUtil.java:89)
+	at com.kuka.roboticsAPI.applicationServer.services.common.DataSourceUtil.getToolIdsFromProject(DataSourceUtil.java:27)
+	at com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$1.getInstance(SetupService.java:141)
+	at com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$1.getInstance(SetupService.java:1)
+	at com.kuka.roboticsAPI.applicationServer.services.stationModel.features.LazyRobotFeatureInitializer.getInstance(LazyRobotFeatureInitializer.java:34)
+	at com.kuka.roboticsAPI.applicationServer.services.stationModel.features.LazyMovableDeviceFeatureInitializer.get(LazyMovableDeviceFeatureInitializer.java:76)
+	at com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$ProjectManagerListenerImpl.checkUnloadActiveProject(SetupService.java:577)
+	at com.kuka.project.provider.internal.ProjectManager.checkUnloadActiveProject(ProjectManager.java:432)
+	... 14 more
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.722
+!MESSAGE NLS unused message: DisplayName_MAIN_AXIS in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.722
+!MESSAGE NLS unused message: DisplayName_SafetyBasic in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.723
+!MESSAGE NLS unused message: DisplayName_BackupManager.BackupImportFilePath in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.723
+!MESSAGE NLS unused message: DisplayName_BackupManager.PasswordForFileServer in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.723
+!MESSAGE NLS unused message: DisplayName_BackupManager.UsernameForFileServer in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.723
+!MESSAGE NLS unused message: DisplayName_BackupManager.BackupNetworkPath in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.724
+!MESSAGE NLS unused message: DisplayName_BackupManager.BackupDestinationType in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.724
+!MESSAGE NLS unused message: DisplayName_local in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.724
+!MESSAGE NLS unused message: DisplayName_network in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.725
+!MESSAGE NLS unused message: DisplayName_active in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.725
+!MESSAGE NLS unused message: DisplayName_inactive in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.725
+!MESSAGE NLS unused message: DisplayName_BackupManager.BackupInterval in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.726
+!MESSAGE NLS unused message: DisplayName_BackupManager.BackupTime in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.727
+!MESSAGE NLS unused message: DisplayName_BackupManager.AutomaticBackupActivated in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.727
+!MESSAGE NLS unused message: DisplayName_BackupManager.MaxNumberOfBackups in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.727
+!MESSAGE NLS unused message: DisplayName_KLI_IP_Range in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.727
+!MESSAGE NLS unused message: DisplayName_HandGuidingFeature in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.728
+!MESSAGE NLS unused message: DisplayName_HandguidingAutomaticMode in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.728
+!MESSAGE NLS unused message: DisplayName_HandguidingTestMode in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.728
+!MESSAGE NLS unused message: DisplayName_PROFIsafeAddress in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.728
+!MESSAGE NLS unused message: DisplayName_FSoESlaveAddress in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.730
+!MESSAGE NLS unused message: Description_KLI_IP_Range in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.730
+!MESSAGE NLS unused message: DisplayName_Other in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.730
+!MESSAGE NLS unused message: DisplayName_IoHandling in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.731
+!MESSAGE NLS unused message: DisplayName_DenyAccessInEmergencyStop in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.731
+!MESSAGE NLS unused message: InstallProgramOnControllerAction_InstallationFilesFolderNotExisingOrFile in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.732
+!MESSAGE NLS unused message: InstallProgramOnControllerAction_InstallationScriptNotExisingOrDirectory in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.732
+!MESSAGE NLS unused message: InstallProgramOnControllerAction_UnInstallationScriptNotExisingOrDirectory in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.732
+!MESSAGE NLS unused message: InstPermMgr_InstallerPreviewMessage in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.733
+!MESSAGE NLS unused message: DisplayName_ApplicationHost in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.733
+!MESSAGE NLS unused message: DisplayName_ApplicationDebugging in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.734
+!MESSAGE NLS missing message: InstPermMgr_TimeoutDialog_Title in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.734
+!MESSAGE NLS missing message: InstPermMgr_InstAlreadyRunning_Title in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.734
+!MESSAGE NLS missing message: InstPermMgr_InstDeniedDialog_Title in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.735
+!MESSAGE NLS missing message: InstPermMgr_InsufficientRights_Title in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.735
+!MESSAGE NLS missing message: InstPermMgr_InstDeniedDialog_ReasonDenied in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 14:56:34.736
+!MESSAGE NLS missing message: InstPermMgr_InstDeniedDialog_ReasonTimeout in: com.kuka.configuration.eclipsePlugin.ConfigurationPlugin
+
+!ENTRY com.kuka.common.eclipse 4 0 2026-01-10 14:57:20.923
+!MESSAGE The synchronized project caused an error in the controller, see details.
+!STACK 0
+java.lang.IllegalStateException: Error while querying listener 'com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$ProjectManagerListenerImpl@147bc1'.
+	at com.kuka.project.provider.internal.ProjectManager.checkUnloadActiveProject(ProjectManager.java:436)
+	at com.kuka.project.provider.internal.ProjectManager.unloadActiveProject(ProjectManager.java:375)
+	at com.kuka.project.provider.internal.ProjectManager.unloadActiveProject(ProjectManager.java:342)
+	at com.kuka.deployment.manager.internal.DeploymentManager.requestDeployment(DeploymentManager.java:193)
+	at com.kuka.deployment.service.internal.DeploymentServiceImpl.doRequestDeployment(DeploymentServiceImpl.java:164)
+	at com.kuka.deployment.service.internal.DeploymentServiceImpl.requestDeployment(DeploymentServiceImpl.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.kuka.publishing.ncf.contracts.MethodContract.invoke(MethodContract.java:95)
+	at com.kuka.publishing.ncf.messages.MethodInvoker.run(MethodInvoker.java:36)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to get tool templates from application data source
+	at com.kuka.roboticsAPI.applicationServer.services.common.DataSourceUtil.getToolTemplates(DataSourceUtil.java:89)
+	at com.kuka.roboticsAPI.applicationServer.services.common.DataSourceUtil.getToolIdsFromProject(DataSourceUtil.java:27)
+	at com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$1.getInstance(SetupService.java:141)
+	at com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$1.getInstance(SetupService.java:1)
+	at com.kuka.roboticsAPI.applicationServer.services.stationModel.features.LazyRobotFeatureInitializer.getInstance(LazyRobotFeatureInitializer.java:34)
+	at com.kuka.roboticsAPI.applicationServer.services.stationModel.features.LazyMovableDeviceFeatureInitializer.get(LazyMovableDeviceFeatureInitializer.java:76)
+	at com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$ProjectManagerListenerImpl.checkUnloadActiveProject(SetupService.java:577)
+	at com.kuka.project.provider.internal.ProjectManager.checkUnloadActiveProject(ProjectManager.java:432)
+	... 14 more
+
+!ENTRY com.kuka.common.eclipse 4 0 2026-01-10 14:59:46.955
+!MESSAGE The synchronized project caused an error in the controller, see details.
+!STACK 0
+java.lang.IllegalStateException: Error while querying listener 'com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$ProjectManagerListenerImpl@147bc1'.
+	at com.kuka.project.provider.internal.ProjectManager.checkUnloadActiveProject(ProjectManager.java:436)
+	at com.kuka.project.provider.internal.ProjectManager.unloadActiveProject(ProjectManager.java:375)
+	at com.kuka.project.provider.internal.ProjectManager.unloadActiveProject(ProjectManager.java:342)
+	at com.kuka.deployment.manager.internal.DeploymentManager.requestDeployment(DeploymentManager.java:193)
+	at com.kuka.deployment.service.internal.DeploymentServiceImpl.doRequestDeployment(DeploymentServiceImpl.java:164)
+	at com.kuka.deployment.service.internal.DeploymentServiceImpl.requestDeployment(DeploymentServiceImpl.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.kuka.publishing.ncf.contracts.MethodContract.invoke(MethodContract.java:95)
+	at com.kuka.publishing.ncf.messages.MethodInvoker.run(MethodInvoker.java:36)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to get tool templates from application data source
+	at com.kuka.roboticsAPI.applicationServer.services.common.DataSourceUtil.getToolTemplates(DataSourceUtil.java:89)
+	at com.kuka.roboticsAPI.applicationServer.services.common.DataSourceUtil.getToolIdsFromProject(DataSourceUtil.java:27)
+	at com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$1.getInstance(SetupService.java:141)
+	at com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$1.getInstance(SetupService.java:1)
+	at com.kuka.roboticsAPI.applicationServer.services.stationModel.features.LazyRobotFeatureInitializer.getInstance(LazyRobotFeatureInitializer.java:34)
+	at com.kuka.roboticsAPI.applicationServer.services.stationModel.features.LazyMovableDeviceFeatureInitializer.get(LazyMovableDeviceFeatureInitializer.java:76)
+	at com.kuka.roboticsAPI.applicationServer.services.setupService.internal.SetupService$ProjectManagerListenerImpl.checkUnloadActiveProject(SetupService.java:577)
+	at com.kuka.project.provider.internal.ProjectManager.checkUnloadActiveProject(ProjectManager.java:432)
+	... 14 more
+!SESSION 2026-01-10 15:04:55.858 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_45
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:04:58.137
+!MESSAGE NLS unused message: DeleteTemplateHandler_ConfirmationTitleRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:04:58.147
+!MESSAGE NLS unused message: DeleteHandler_DeleteFrameWithChildsDialogMessageRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:04:58.148
+!MESSAGE NLS unused message: Rapi2DeleteHandler_ConfirmCategoryDeletionTitle in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:04:58.148
+!MESSAGE NLS unused message: Rapi2DeleteHandler_ConfirmCategoryDeletionMessage in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:04:58.148
+!MESSAGE NLS unused message: Rapi2CreateFrameHandler_OnlyOneFrameAllowed in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:04:58.149
+!MESSAGE NLS unused message: ScenegraphView_SelectRapi1 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:04:58.149
+!MESSAGE NLS unused message: ScenegraphView_SelectRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:04:58.150
+!MESSAGE NLS unused message: MassPropertySection_validationError_outOfRange in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+!SESSION 2026-01-10 15:05:51.273 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_45
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -data C:\Github\kuka -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:53.566
+!MESSAGE NLS unused message: DeleteTemplateHandler_ConfirmationTitleRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:53.576
+!MESSAGE NLS unused message: DeleteHandler_DeleteFrameWithChildsDialogMessageRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:53.576
+!MESSAGE NLS unused message: Rapi2DeleteHandler_ConfirmCategoryDeletionTitle in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:53.576
+!MESSAGE NLS unused message: Rapi2DeleteHandler_ConfirmCategoryDeletionMessage in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:53.578
+!MESSAGE NLS unused message: Rapi2CreateFrameHandler_OnlyOneFrameAllowed in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:53.578
+!MESSAGE NLS unused message: ScenegraphView_SelectRapi1 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:53.578
+!MESSAGE NLS unused message: ScenegraphView_SelectRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:05:53.579
+!MESSAGE NLS unused message: MassPropertySection_validationError_outOfRange in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:07:23.958
+!MESSAGE NLS unused message: DeployProjectHandler_UnknownException in: com.kuka.roboticsAPI.industrial.targetManagement.messages
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:07:24.291
+!MESSAGE NLS unused message: FrameSafetyPropertySection_outOfRange in: com.kuka.safety.configuration.SafetyConfiguration
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:07:24.291
+!MESSAGE NLS unused message: WorkpieceSafetyPropertySection_description in: com.kuka.safety.configuration.SafetyConfiguration
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:07:24.292
+!MESSAGE NLS unused message: FrameSafetyPropertySection_description in: com.kuka.safety.configuration.SafetyConfiguration
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 15:07:24.292
+!MESSAGE NLS unused message: WorkpieceSafetyPropertySection_inertiaInvalid in: com.kuka.safety.configuration.SafetyConfiguration
+!SESSION 2026-01-10 16:35:47.823 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_45
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:35:50.124
+!MESSAGE NLS unused message: DeleteTemplateHandler_ConfirmationTitleRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:35:50.135
+!MESSAGE NLS unused message: DeleteHandler_DeleteFrameWithChildsDialogMessageRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:35:50.136
+!MESSAGE NLS unused message: Rapi2DeleteHandler_ConfirmCategoryDeletionTitle in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:35:50.137
+!MESSAGE NLS unused message: Rapi2DeleteHandler_ConfirmCategoryDeletionMessage in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:35:50.137
+!MESSAGE NLS unused message: Rapi2CreateFrameHandler_OnlyOneFrameAllowed in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:35:50.137
+!MESSAGE NLS unused message: ScenegraphView_SelectRapi1 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:35:50.138
+!MESSAGE NLS unused message: ScenegraphView_SelectRapi2 in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:35:50.138
+!MESSAGE NLS unused message: MassPropertySection_validationError_outOfRange in: com.kuka.roboticsAPI.eclipseBase.ResourceStrings
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:36:19.626
+!MESSAGE NLS unused message: DeployProjectHandler_UnknownException in: com.kuka.roboticsAPI.industrial.targetManagement.messages
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:36:19.934
+!MESSAGE NLS unused message: FrameSafetyPropertySection_outOfRange in: com.kuka.safety.configuration.SafetyConfiguration
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:36:19.941
+!MESSAGE NLS unused message: WorkpieceSafetyPropertySection_description in: com.kuka.safety.configuration.SafetyConfiguration
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:36:19.941
+!MESSAGE NLS unused message: FrameSafetyPropertySection_description in: com.kuka.safety.configuration.SafetyConfiguration
+
+!ENTRY org.eclipse.osgi 2 1 2026-01-10 16:36:19.942
+!MESSAGE NLS unused message: WorkpieceSafetyPropertySection_inertiaInvalid in: com.kuka.safety.configuration.SafetyConfiguration

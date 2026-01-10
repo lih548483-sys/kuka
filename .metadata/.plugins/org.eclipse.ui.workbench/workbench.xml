@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="9" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="234" y="234">
 <fastViewData fastViewLocation="1024"/>
@@ -388,38 +388,26 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CompletMovement.java" tooltip="lumba/src/application/CompletMovement.java">
+<persistable path="/lumba/src/application/CompletMovement.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinusFiftennDegreeVertical.java" tooltip="lumba/src/application/MinusFiftennDegreeVertical.java">
 <persistable path="/lumba/src/application/MinusFiftennDegreeVertical.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PositiveFifteenDegreVertical.java" tooltip="lumba/src/application/PositiveFifteenDegreVertical.java">
-<persistable path="/lumba/src/application/PositiveFifteenDegreVertical.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinusFiveDegreeVertical.java" tooltip="lumba/src/application/MinusFiveDegreeVertical.java">
-<persistable path="/lumba/src/application/MinusFiveDegreeVertical.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ZeroDegreVertical.java" tooltip="lumba/src/application/ZeroDegreVertical.java">
-<persistable path="/lumba/src/application/ZeroDegreVertical.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PositiveFiveDegreVertical.java" tooltip="lumba/src/application/PositiveFiveDegreVertical.java">
-<persistable path="/lumba/src/application/PositiveFiveDegreVertical.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinusTenDegreeVertical.java" tooltip="lumba/src/application/MinusTenDegreeVertical.java">
-<persistable path="/lumba/src/application/MinusTenDegreeVertical.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoveMinusZ.java" tooltip="lumba/src/application/MoveMinusZ.java">
+<persistable path="/lumba/src/application/MoveMinusZ.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoveZConstantSpeed.java" tooltip="lumba/src/application/MoveZConstantSpeed.java">
 <persistable path="/lumba/src/application/MoveZConstantSpeed.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PositiveTenDegreVertical.java" tooltip="lumba/src/application/PositiveTenDegreVertical.java">
-<persistable path="/lumba/src/application/PositiveTenDegreVertical.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MechanicalZeroPosition.java" tooltip="lumba/src/application/MechanicalZeroPosition.java">
+<persistable path="/lumba/src/application/MechanicalZeroPosition.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PositivetwentyDegreVertical.java" tooltip="lumba/src/application/PositivetwentyDegreVertical.java">
-<persistable path="/lumba/src/application/PositivetwentyDegreVertical.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoveMinusZConstantSpeed.java" tooltip="lumba/src/application/MoveMinusZConstantSpeed.java">
+<persistable path="/lumba/src/application/MoveMinusZConstantSpeed.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinusTwentyDegreeVertical.java" tooltip="lumba/src/application/MinusTwentyDegreeVertical.java">
-<persistable path="/lumba/src/application/MinusTwentyDegreeVertical.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinusFifteenDegreeVertical.java" tooltip="lumba/src/application/MinusFifteenDegreeVertical.java">
-<persistable path="/lumba/src/application/MinusFifteenDegreeVertical.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.data.xml" tooltip="lumba/src/RoboticsAPI.data.xml">
+<persistable path="/lumba/src/RoboticsAPI.data.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.config.xml" tooltip="lumba/src/RoboticsAPI.config.xml">
 <persistable path="/lumba/src/RoboticsAPI.config.xml"/>
@@ -427,11 +415,23 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.data.ProcessDataExample.xml" tooltip="lumba/src/RoboticsAPI.data.ProcessDataExample.xml">
 <persistable path="/lumba/src/RoboticsAPI.data.ProcessDataExample.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.data.xml" tooltip="lumba/src/RoboticsAPI.data.xml">
-<persistable path="/lumba/src/RoboticsAPI.data.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" name="StationSetup.cat" tooltip="lumba/StationSetup.cat">
+<persistable path="/lumba/StationSetup.cat"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.data.xml" tooltip="SunriseProject/src/RoboticsAPI.data.xml">
-<persistable path="/SunriseProject/src/RoboticsAPI.data.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.kuka.safety.configuration.eclipseplugin.editors.MultiPageEditor" name="SafetyConfiguration.sconf" tooltip="lumba/SafetyConfiguration.sconf">
+<persistable path="/lumba/SafetyConfiguration.sconf"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ZeroDegreVertical.java" tooltip="lumba/src/application/ZeroDegreVertical.java">
+<persistable path="/lumba/src/application/ZeroDegreVertical.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PositiveFifteenDegreVertical.java" tooltip="lumba/src/application/PositiveFifteenDegreVertical.java">
+<persistable path="/lumba/src/application/PositiveFifteenDegreVertical.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinusFiveDegreeVertical.java" tooltip="lumba/src/application/MinusFiveDegreeVertical.java">
+<persistable path="/lumba/src/application/MinusFiveDegreeVertical.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PositiveFiveDegreVertical.java" tooltip="lumba/src/application/PositiveFiveDegreVertical.java">
+<persistable path="/lumba/src/application/PositiveFiveDegreVertical.java"/>
 </file>
 </mruList>
 </workbench>
