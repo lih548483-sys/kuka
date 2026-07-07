@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="10" version="2.0">
+<workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
-<window height="1398" width="1296" x="-8" y="0">
+<window height="1380" maximized="true" width="1296" x="154" y="0">
 <fastViewData fastViewLocation="1024"/>
 <intro standby="true"/>
 <perspectiveBar>
@@ -36,22 +36,22 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MediaFlangeFunctions.java" partName="MediaFlangeFunctions.java" path="C:/GitHub/kuka/IIWAControlToolbox/src/IIWAControlToolbox/MediaFlangeFunctions.java" title="MediaFlangeFunctions.java" tooltip="IIWAControlToolbox/src/IIWAControlToolbox/MediaFlangeFunctions.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/IIWAControlToolbox/src/IIWAControlToolbox/MediaFlangeFunctions.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1206" selectionTopPixel="1575"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ICTServer.java" partName="ICTServer.java" path="C:/GitHub/kuka/IIWAControlToolbox/src/IIWAControlToolbox/ICTServer.java" title="ICTServer.java" tooltip="IIWAControlToolbox/src/IIWAControlToolbox/ICTServer.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/IIWAControlToolbox/src/IIWAControlToolbox/ICTServer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.PropertySheet" partName="属性">
 <viewState/>
 </view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console"/>
 <view id="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView" partName="对象模板">
 <viewState/>
 </view>
-<view id="com.kuka.roboticsAPI.eclipseBase.dataView.DataView" partName="Application data">
+<view id="com.kuka.roboticsAPI.eclipseBase.dataView.DataView" partName="应用数据">
 <viewState/>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="包资源管理器">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
 <customFilters userDefinedPatternsEnabled="false">
@@ -100,7 +100,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
 <perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="com.kuka.common.eclipsePlugin.ProgrammingPerspective">
-<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.kuka.common.eclipsePlugin.ProgrammingPerspectiveFactory" id="com.kuka.common.eclipsePlugin.ProgrammingPerspective" label="编程"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
@@ -303,55 +303,45 @@
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.next"/>
 <hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.ProfileDropDownAction"/>
 <hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="org.eclipse.ui.views.PropertySheet" style="1">
-<fastViews>
-<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
-<view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="16384" id="topLeft" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">
-<fastViews>
-<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@e6da7b" orientation="512" selectedTabId="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView" style="1">
-<fastViews>
-<view id="com.kuka.roboticsAPI.eclipseBase.dataView.DataView" ratio="0.3"/>
-<view id="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@d0c3d5" orientation="512" selectedTabId="org.eclipse.ui.internal.introview" style="0">
-<fastViews>
-<view id="org.eclipse.ui.internal.introview" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="com.kuka.roboticsAPI.eclipseBase.dataView.DataView"/>
+<view id="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.jdt.ui.JavadocView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.ui.internal.introview"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="包资源管理器"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@d0c3d5" ratio="0.75" ratioLeft="1194" ratioRight="398" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="欢迎"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@e6da7b" ratio="0.8880676" ratioLeft="841" ratioRight="106" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="0">
-<page content="com.kuka.roboticsAPI.eclipseBase.dataView.DataView" label="LabelNotFound"/>
-<page content="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView" appearance="2" expanded="2">
+<page content="com.kuka.roboticsAPI.eclipseBase.dataView.DataView" label="应用数据"/>
+<page content="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView" label="对象模板"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="756" ratioRight="252" relationship="2" relative="topLeft">
@@ -363,12 +353,17 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2301061" ratioLeft="347" ratioRight="1161" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottomRight" ratio="0.65876776" ratioLeft="417" ratioRight="216" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="属性"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="bottomLeft" ratio="0.49921012" ratioLeft="316" ratioRight="317" relationship="4" relative="topLeft">
@@ -389,6 +384,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/IIWAControlToolbox/src/IIWAControlToolbox/ICTServer.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/IIWAControlToolbox/src/IIWAControlToolbox/MediaFlangeFunctions.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/IIWAControlToolbox/src/IIWAControlToolbox/PTPmotionClass.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/lumba/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/SunriseProject/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/IIWAControlToolbox/src/IIWAControlToolbox/MediaFlangeFunctions.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/IIWAControlToolbox/src/IIWAControlToolbox/ICTServer.java"/>
 </editors>
 <item historyLabel="MechanicalZeroPosition.java" index="0">
 <position info="not_deleted" x="1153" y="0"/>
@@ -414,8 +413,19 @@
 <item historyLabel="PTPmotionClass.java" index="4">
 <position info="not_deleted" x="841" y="0"/>
 </item>
-<item active="true" historyLabel="MediaFlangeFunctions.java" index="3">
+<item historyLabel="MediaFlangeFunctions.java" index="3">
 <position info="not_deleted" x="1206" y="0"/>
+</item>
+<item historyLabel="StationSetup.cat" index="5"/>
+<item historyLabel="StationSetup.cat" index="6"/>
+<item historyLabel="StationSetup.cat" index="5"/>
+<item historyLabel="StationSetup.cat" index="6"/>
+<item historyLabel="StationSetup.cat" index="5"/>
+<item historyLabel="MediaFlangeFunctions.java" index="7">
+<position info="not_deleted" x="1206" y="0"/>
+</item>
+<item active="true" historyLabel="ICTServer.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -423,13 +433,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topLeft"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@d0c3d5"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@e6da7b"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -437,11 +440,19 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottomRight"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ICTServer.java" tooltip="IIWAControlToolbox/src/IIWAControlToolbox/ICTServer.java">
+<persistable path="/IIWAControlToolbox/src/IIWAControlToolbox/ICTServer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" name="StationSetup.cat" tooltip="SunriseProject/StationSetup.cat">
+<persistable path="/SunriseProject/StationSetup.cat"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" name="StationSetup.cat" tooltip="lumba/StationSetup.cat">
+<persistable path="/lumba/StationSetup.cat"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PTPmotionClass.java" tooltip="IIWAControlToolbox/src/IIWAControlToolbox/PTPmotionClass.java">
 <persistable path="/IIWAControlToolbox/src/IIWAControlToolbox/PTPmotionClass.java"/>
 </file>
@@ -477,15 +488,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.config.xml" tooltip="lumba/src/RoboticsAPI.config.xml">
 <persistable path="/lumba/src/RoboticsAPI.config.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.data.ProcessDataExample.xml" tooltip="lumba/src/RoboticsAPI.data.ProcessDataExample.xml">
-<persistable path="/lumba/src/RoboticsAPI.data.ProcessDataExample.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" name="StationSetup.cat" tooltip="lumba/StationSetup.cat">
-<persistable path="/lumba/StationSetup.cat"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.kuka.safety.configuration.eclipseplugin.editors.MultiPageEditor" name="SafetyConfiguration.sconf" tooltip="lumba/SafetyConfiguration.sconf">
-<persistable path="/lumba/SafetyConfiguration.sconf"/>
 </file>
 </mruList>
 </workbench>
