@@ -1,0 +1,17 @@
+*.html
+*.ini
+*.DS_Store
+.vscode/
+*.pyc
+*.png
+*.npz
+*.h5
+*.pdf
+__pycache__/
+*.egg-info/
+
+*.pkl
+*.mp4
+.claude/
+df/
+venv/
