@@ -1,0 +1,151 @@
+import open3d as o3d
+import open3d.visualization.gui as gui
+import open3d.visualization.rendering as rendering
+import numpy as np
+import os
+
+class PointCloudPickerApp:
+    def __init__(self, pcd_path):
+        # 1. 核心数据加载
+        self.pcd = o3d.io.read_point_cloud(pcd_path)
+        if self.pcd.is_empty():
+            raise RuntimeError(f"Failed to read point cloud file or file is empty: {pcd_path}")
+        
+        # 将点云改为深灰色 (RGB: 0.2, 0.2, 0.2)，在白色背景下更容易观察
+        self.pcd.paint_uniform_color([0.2, 0.2, 0.2])
+        self.points = np.asarray(self.pcd.points)
+        self.kdtree = o3d.geometry.KDTreeFlann(self.pcd)
+
+        # 状态变量：保存当前选中的点、起点和终点
+        self.current_picked_idx = None
+        self.current_picked_coord = None
+        self.start_point = None
+        self.end_point = None
+
+        # 2. GUI 初始化
+        gui.Application.instance.initialize()
+        self.window = gui.Application.instance.create_window("Point Cloud Path Planner", 1280, 720)
+
+        # 3. 设置 3D 场景视窗
+        self.scene_widget = gui.SceneWidget()
+        self.scene_widget.scene = rendering.Open3DScene(self.window.renderer)
+        # 将背景颜色设置为纯白色 [R, G, B, A]
+        self.scene_widget.scene.set_background([1.0, 1.0, 1.0, 1.0])
+
+        # 加载点材质，并将点的大小放大至 8.0
+        mat = rendering.MaterialRecord()
+        mat.shader = "defaultUnlit"
+        mat.point_size = 8.0  
+        self.scene_widget.scene.add_geometry("point_cloud", self.pcd, mat)
+        
+        # 居中显示与相机自适应
+        bounds = self.scene_widget.scene.bounding_box
+        self.scene_widget.setup_camera(60.0, bounds, bounds.get_center())
+
+        # 4. 右上角英文交互面板 (使用英文避免乱码)
+        em = self.window.theme.font_size
+        self.info_panel = gui.Vert(0.5 * em, gui.Margins(em, em, em, em))
+        
+        # 提示标签
+        self.tip_label = gui.Label("Operation: [Shift + Left Click] to select point")
+        self.info_panel.add_child(self.tip_label)
+        
+        # 当前选中点信息展示区
+        self.info_label = gui.Label("Selected Point: None")
+        self.info_panel.add_child(self.info_label)
+
+        # 按钮区：设置起点与终点
+        self.btn_set_start = gui.Button("Set as START Point")
+        self.btn_set_start.set_on_clicked(self._on_set_start)
+        self.info_panel.add_child(self.btn_set_start)
+
+        self.btn_set_end = gui.Button("Set as END Point")
+        self.btn_set_end.set_on_clicked(self._on_set_end)
+        self.info_panel.add_child(self.btn_set_end)
+
+        # 起点与终点结果展示区
+        self.path_label = gui.Label("START: Not set\nEND: Not set")
+        self.info_panel.add_child(self.path_label)
+
+        self.window.add_child(self.scene_widget)
+        self.window.add_child(self.info_panel)
+
+        # 5. 事件绑定
+        self.window.set_on_layout(self._on_layout)
+        self.scene_widget.set_on_mouse(self._on_mouse_event)
+
+    def _on_layout(self, layout_context):
+        r = self.window.content_rect
+        self.scene_widget.frame = r
+        pref = self.info_panel.calc_preferred_size(layout_context, gui.Widget.Constraints())
+        # 右上角绝对定位布局
+        self.info_panel.frame = gui.Rect(r.width - pref.width - 20, 20, pref.width, pref.height)
+
+    def _on_mouse_event(self, event):
+        # 仅响应 Shift + 鼠标左键按下，进行点云拾取
+        if event.type == gui.MouseEvent.Type.BUTTON_DOWN and event.is_modifier_down(gui.KeyModifier.SHIFT):
+            self.scene_widget.scene.scene.pick(
+                event.x, event.y, self._on_pick_result
+            )
+            return gui.Widget.EventCallbackResult.HANDLED
+        return gui.Widget.EventCallbackResult.IGNORED
+
+    def _on_pick_result(self, hit):
+        if hit.is_valid:
+            hit_coord = np.array([hit.hit_position[0], hit.hit_position[1], hit.hit_position[2]])
+            
+            # 使用 KD 树在三维空间中寻找离点击射线交点最近的点（解决模型点稀疏点不中的问题）
+            _, idx_list, _ = self.kdtree.search_knn_vector_3d(hit_coord, 1)
+            
+            if len(idx_list) > 0:
+                idx = idx_list[0]
+                pt = self.points[idx]
+                
+                self.current_picked_idx = idx
+                self.current_picked_coord = pt
+                
+                # 组装英文提示
+                info_text = f"Selected Point:\nIndex: {idx}\nX: {pt[0]:.4f}\nY: {pt[1]:.4f}\nZ: {pt[2]:.4f}"
+                
+                gui.Application.instance.post_to_main_thread(
+                    self.window, lambda: self._update_picked_info(info_text)
+                )
+
+    def _update_picked_info(self, text):
+        self.info_label.text = text
+        self.window.set_needs_layout()
+
+    def _on_set_start(self):
+        if self.current_picked_idx is not None:
+            self.start_point = (self.current_picked_idx, self.current_picked_coord)
+            self._update_path_display()
+            print(f"[Planner] Start set to Point {self.start_point[0]}: {self.start_point[1]}")
+
+    def _on_set_end(self):
+        if self.current_picked_idx is not None:
+            self.end_point = (self.current_picked_idx, self.current_picked_coord)
+            self._update_path_display()
+            print(f"[Planner] End set to Point {self.end_point[0]}: {self.end_point[1]}")
+
+    def _update_path_display(self):
+        start_str = f"START: Index {self.start_point[0]}" if self.start_point else "START: Not set"
+        end_str = f"END: Index {self.end_point[0]}" if self.end_point else "END: Not set"
+        self.path_label.text = f"{start_str}\n{end_str}"
+        self.window.set_needs_layout()
+
+    def run(self):
+        gui.Application.instance.run()
+
+if __name__ == "__main__":
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    # 自动寻找同级目录下的任意 ply 文件，若找不到则手动指定
+    target_file = os.path.join(current_dir, "rectangular_grid.ply")
+    
+    # 检查默认文件是否存在，若不存在，可在此处直接替换为你的骨骼模型 PLY 绝对路径
+    if not os.path.exists(target_file):
+        # 示例：
+        target_file = r"C:\GitHub\kuka\robot control\DOF\gemini_code\Bone_m_later.ply"
+
+    print(f"Loading cloud from: {target_file}")
+    app = PointCloudPickerApp(target_file)
+    app.run()
